@@ -6,8 +6,8 @@ plugins {
     id("maven-publish")
 }
 
-group = "lzdev42"
-version = "0.2.5"
+group = "com.github.lzdev42.KotlinToolbox"
+version = "0.2.6"
 
 kotlin {
     androidTarget {
@@ -70,6 +70,7 @@ android {
 publishing {
     publications.withType<MavenPublication> {
         // KMP 插件会自动为每个平台创建 publication
+        groupId = "com.github.lzdev42.KotlinToolbox"
         // 我们只需要配置共同的 pom 信息
         pom {
             name.set("KotlinToolbox")
