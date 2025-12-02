@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "lzdev42"
-version = "0.2.3"
+version = "0.2.4"
 
 kotlin {
     androidTarget {
@@ -100,12 +100,7 @@ publishing {
 }
 
 // 修改 artifactId 从 shared 改为 kotlintoolbox
-afterEvaluate {
-    publishing {
-        publications.all {
-            val targetPublication = this as? MavenPublication
-            targetPublication?.artifactId = targetPublication?.artifactId?.replace("shared", "kotlintoolbox")
-        }
-    }
-}
+
+// artifactId 将自动使用项目名称 (kotlintoolbox)
+
 

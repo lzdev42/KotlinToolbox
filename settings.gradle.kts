@@ -1,4 +1,4 @@
-rootProject.name = "kotlintoolbox"
+rootProject.name = "KotlinToolbox-Root"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -33,4 +33,4 @@ plugins {
 }
 
 include(":composeApp")
-include(":shared")
+include(":kotlintoolbox")
